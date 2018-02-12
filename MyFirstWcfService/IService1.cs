@@ -14,6 +14,9 @@ namespace MyFirstWcfService
     {
         [OperationContract]
         string GetMyName();
-       
+
+        [OperationContract]
+        string GetMyEmail();
+
     }
 }

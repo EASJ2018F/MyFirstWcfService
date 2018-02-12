@@ -13,6 +13,15 @@ namespace MyFirstWcfService
     public class Service1 : IService1
     {
         /// <summary>
+        /// returnerer email
+        /// </summary>
+        /// <returns></returns>
+        public string GetMyEmail()
+        {
+            return "mark@easj.dk";
+        }
+
+        /// <summary>
         /// returner mit navn 
         /// </summary>
         /// <returns></returns>
