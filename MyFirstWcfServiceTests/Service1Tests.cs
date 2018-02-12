@@ -22,14 +22,19 @@ namespace MyFirstWcfService.Tests
 
             //assert
             Assert.AreEqual("mark@easj.dk", email);
-
-            //Assert.Fail();
         }
 
         [TestMethod()]
         public void GetMyNameTest()
         {
-            Assert.Fail();
+            //arrange
+            var service1 = new Service1();
+
+            //act
+            string navn = service1.GetMyName();
+
+            //assert
+            Assert.AreEqual("Martin", navn);
         }
     }
 }
