@@ -14,7 +14,16 @@ namespace MyFirstWcfService.Tests
         [TestMethod()]
         public void GetMyEmailTest()
         {
-            Assert.Fail();
+            //arrange
+            var service1 = new Service1();
+
+            //act
+            string email = service1.GetMyEmail();
+
+            //assert
+            Assert.AreEqual("mark@easj.dk", email);
+
+            //Assert.Fail();
         }
 
         [TestMethod()]
